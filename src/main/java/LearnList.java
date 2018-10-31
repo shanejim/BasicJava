@@ -9,7 +9,7 @@ import java.util.List;
 public class LearnList {
 
     public static void main(String args[]) {
-
+        int a = 1;
         List<String> strList = new ArrayList<String>();
 
 
