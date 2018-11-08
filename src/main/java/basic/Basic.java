@@ -10,8 +10,8 @@ public class Basic {
         int i = 1, j = 1;
         int a = i++;
         int b = ++j;
-        System.out.println(a);
-        System.out.println(b);
+        System.out.println(a);      //1
+        System.out.println(b);      //2
 
     }
 }
