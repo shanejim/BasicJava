@@ -1,4 +1,4 @@
-package designpatter;
+package designpattern;
 
 /**
  * @description: 单例模式
