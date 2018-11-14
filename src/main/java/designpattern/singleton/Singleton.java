@@ -15,8 +15,6 @@ public class Singleton {
     }
 
     private static class SingletonInstance{
-
         static Singleton instance = new Singleton();
-
     }
 }
