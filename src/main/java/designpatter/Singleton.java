@@ -2,7 +2,7 @@ package designpatter;
 
 /**
  * @description: 单例模式
- * @author: panshenjia
+ * @author: shanejim
  * @create: 2018-11-02 15:06
  **/
 public class Singleton {
