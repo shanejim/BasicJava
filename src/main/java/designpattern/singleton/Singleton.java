@@ -1,10 +1,10 @@
-package designpattern;
+package designpattern.singleton;
 
 /**
- * @description: 单例模式
- * @author: shanejim
- * @create: 2018-11-02 15:06
- **/
+ * @author shanejim
+ * @description 单例模式（最准确）
+ * @date 2018/11/14
+ */
 public class Singleton {
 
     //构造方法私有，保证外界无法直接实例化
