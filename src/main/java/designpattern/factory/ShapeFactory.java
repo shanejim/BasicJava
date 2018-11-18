@@ -1,4 +1,9 @@
-package designpattern.simplefactory;
+package designpattern.factory;
+
+import designpattern.factory.common.Circle;
+import designpattern.factory.common.Rectangle;
+import designpattern.factory.common.Shape;
+import designpattern.factory.common.Square;
 
 /**
  * @author shanejim
@@ -7,8 +12,8 @@ package designpattern.simplefactory;
  */
 public class ShapeFactory {
 
-    //使用 getShape 方法获取形状类型的对象
-    public Shape getShape(String shapeType) {
+    //使用 createShape 方法获取形状类型的对象
+    public Shape createShape(String shapeType) {
         if (shapeType == null) {
             return null;
         }

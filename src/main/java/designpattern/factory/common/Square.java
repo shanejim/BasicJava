@@ -1,4 +1,4 @@
-package designpattern.simplefactory;
+package designpattern.factory.common;
 
 /**
  * @author shanejim
