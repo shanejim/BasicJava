@@ -1,4 +1,4 @@
-package designpattern.factory;
+package designpattern.factory.simplefactory;
 
 import designpattern.factory.common.Shape;
 import designpattern.factory.simplefactory.ShapeFactory;
@@ -14,15 +14,15 @@ public class SimpleFactoryPatternDemo {
         ShapeFactory shapeFactory = new ShapeFactory();
 
         //获取 Rectangle 的对象，并调用它的 draw 方法
-        Shape shape1 = shapeFactory.createShape("RECTANGLE");
+        Shape rectangle = shapeFactory.createShape("RECTANGLE");
 
         //调用 Rectangle 的 draw 方法
-        shape1.draw();
+        rectangle.draw();
 
         //获取 Square 的对象，并调用它的 draw 方法
-        Shape shape2 = shapeFactory.createShape("SQUARE");
+        Shape square = shapeFactory.createShape("SQUARE");
 
         //调用 Square 的 draw 方法
-        shape2.draw();
+        square.draw();
     }
 }
