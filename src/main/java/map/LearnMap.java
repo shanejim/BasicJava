@@ -1,3 +1,5 @@
+package map;
+
 /**
  * @author shanejim
  * @description todo
