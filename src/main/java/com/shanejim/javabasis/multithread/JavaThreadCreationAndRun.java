@@ -1,6 +1,4 @@
-package multithread;
-
-import java.util.concurrent.BlockingQueue;
+package com.shanejim.javabasis.multithread;
 
 /**
  * @author shanejim

@@ -1,4 +1,4 @@
-package map;
+package com.shanejim.javabasis.util.map;
 
 /**
  * @author shanejim

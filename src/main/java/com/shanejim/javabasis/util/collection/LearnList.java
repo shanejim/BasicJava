@@ -1,4 +1,4 @@
-package collection;
+package com.shanejim.javabasis.util.collection;
 
 import java.util.ArrayList;
 import java.util.List;

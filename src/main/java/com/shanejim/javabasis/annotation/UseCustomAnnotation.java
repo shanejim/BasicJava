@@ -1,4 +1,4 @@
-package annotation;
+package com.shanejim.javabasis.annotation;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
