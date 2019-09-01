@@ -7,6 +7,10 @@ import java.lang.annotation.RetentionPolicy;
 public @interface TypeHeader {
     // Default value specified for developer attribute
     String developer() default "Unknown";
-    String lastModified();    String [] teamMembers();
+
+    String lastModified();
+
+    String[] teamMembers();
+
     int meaningOfLife();
 }
