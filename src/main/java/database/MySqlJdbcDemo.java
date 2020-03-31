@@ -10,7 +10,7 @@ import java.sql.*;
 public class MySqlJdbcDemo {
     // JDBC 驱动名及数据库 URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://192.168.180.128:33714/personal";
+    static final String DB_URL = "jdbc:mysql://192.168.25.130:3306/personal?serverTimezone=GMT%2B8";
 
     // 数据库的用户名与密码，需要根据自己的设置
     static final String USER = "shanejim";
