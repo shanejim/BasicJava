@@ -1,3 +1,5 @@
+package com.shanejim.javabasis.util;
+
 import java.util.Arrays;
 
 public class LearnArray {
