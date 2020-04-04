@@ -1,6 +1,7 @@
 package database;
 
 import database.bean.Employee;
+import database.bean.EmployeeMapper;
 import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -22,7 +23,7 @@ public class JdbcTempDemo {
 
         String sql = "SELECT * FROM t_employee where is_deleted =0";
         RowMapper<Employee> rowMapper = new BeanPropertyRowMapper<>(Employee.class);
-        List<Employee> list = jdbcTemplate.query(sql, rowMapper);
+        List<Employee> list = jdbcTemplate.query(sql, new EmployeeMapper());
 
 
         System.out.println(list.get(0).toString());
