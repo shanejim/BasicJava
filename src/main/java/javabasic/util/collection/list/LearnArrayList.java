@@ -13,14 +13,9 @@ import java.util.List;
 public class LearnArrayList {
 
     public static void main(String args[]) {
-        int a = 1;
-        int b = 2;
         List strList = new ArrayList<String>();
-
         strList.add("asds");
-
         System.out.println(strList.size());
-
 
         List<Student> studentList = new ArrayList<>();
         Student studentA = new Student();
@@ -31,7 +26,20 @@ public class LearnArrayList {
         studentB.setName("Mike");
         studentList.add(studentB);
 
+        List<String> items = new ArrayList<>();
+        items.add("A");
+        items.add("B");
+        items.add("C");
+        items.add("D");
+        items.add("E");
 
-
+        //Output : A,B,C,D,E
+        for (String item : items) {
+            System.out.println(item);
+        }
+        //lambda in java 8
+        items.forEach(item -> {
+            System.out.println(item);
+        });
     }
 }
