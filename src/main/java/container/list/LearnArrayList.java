@@ -1,4 +1,4 @@
-package container.collection.list;
+package container.list;
 
 import entity.Student;
 
