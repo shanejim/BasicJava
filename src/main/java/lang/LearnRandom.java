@@ -1,4 +1,4 @@
-package javabasic;
+package lang;
 
 import java.util.Random;
 

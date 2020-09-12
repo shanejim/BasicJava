@@ -13,9 +13,6 @@ import java.util.List;
 public class LearnArrayList {
 
     public static void main(String args[]) {
-        List strList = new ArrayList<String>();
-        strList.add("asds");
-        System.out.println(strList.size());
 
         List<Student> studentList = new ArrayList<>();
         Student studentA = new Student();
@@ -33,6 +30,10 @@ public class LearnArrayList {
         items.add("D");
         items.add("E");
 
+        items.add(2, "HH");
+        items.set(1, "AS");
+        System.out.println(items.size());
+
         //Output : A,B,C,D,E
         for (String item : items) {
             System.out.println(item);
@@ -41,5 +42,27 @@ public class LearnArrayList {
         items.forEach(item -> {
             System.out.println(item);
         });
+
+        //交集 并集 差集 去重复并集    如果是对象比较，需要重写GetHashCode()与Equals(object obj)
+        List<String> charAList = new ArrayList<>();
+        List<String> charBList = new ArrayList<>();
+        charAList.add("AAA");
+        charAList.add("BBB");
+        charAList.add("CCC");
+        charBList.add("CCC");
+        charBList.add("DDD");
+        charBList.add("EEE");
+
+        //并集
+        charAList.addAll(charBList);
+        //交集
+        charAList.retainAll(charBList);
+        //差集
+        charAList.removeAll(charBList);
+        //无重复并集 先移除相同的，在求并集
+        charBList.removeAll(charAList);
+        charAList.addAll(charBList);
+
+
     }
 }
