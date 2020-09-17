@@ -1,11 +1,21 @@
 package entity;
 
 public class Student {
+    public Integer id;
+
     public String name;
 
     public Integer age;
 
     public Integer grade;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -34,7 +44,8 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 ", grade=" + grade +
                 '}';
