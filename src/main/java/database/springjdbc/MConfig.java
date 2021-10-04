@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 //@ComponentScan(basePackages="com.shanejim")
 @Configuration
 public class MConfig {
-    private final String URL="jdbc:mysql://192.168.25.130:3306/personal?serverTimezone=GMT%2B8";
+    private final String URL="jdbc:mysql://192.168.25.134:3306/personal?serverTimezone=GMT%2B8";
     private final String NAME="shanejim";
     private final String PASSWORD="Shanejim123,,,";
 

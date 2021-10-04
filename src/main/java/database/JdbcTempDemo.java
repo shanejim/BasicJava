@@ -14,7 +14,7 @@ public class JdbcTempDemo {
 //创建数据源连接池
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://192.168.25.130:3306/personal?serverTimezone=GMT%2B8");
+        dataSource.setUrl("jdbc:mysql://192.168.25.134:3306/personal?serverTimezone=GMT%2B8");
         dataSource.setUsername("shanejim");
         dataSource.setPassword("Shanejim123,,,");
         //创建jdbc模板

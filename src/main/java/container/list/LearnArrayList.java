@@ -3,6 +3,7 @@ package container.list;
 import entity.Student;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -33,6 +34,11 @@ public class LearnArrayList {
         items.add(2, "HH");
         items.set(1, "AS");
         System.out.println(items.size());
+
+        Iterator it=items.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
 
         //Output : A,B,C,D,E
         for (String item : items) {
